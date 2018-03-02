@@ -1,0 +1,32 @@
+[
+    {
+        "name" : "Black Bread",
+        "src" : "/assets/img/blackbread.jpg",
+        "price" : 100,
+        "description" : "Made of rye grain, usually dark colored and high fiber, ranges from crispy in texture to dense and chewy."
+    },
+    {
+        "name" : "Bolani",
+        "src" : "/assets/img/bolani.jpg",
+        "price" : 100,
+        "description" : "Has a very thin crust and can be stuffed with a variety of ingredients, such as potatoes, spinach, lentils, pumpkin, or leeks."
+    },
+    {
+        "name" : "Cornbread",
+        "src" : "/assets/img/cornbread.jpg",
+        "price" : 100,
+        "description" : "Made from cornmeal, can be baked or fried, has a golden appearance, usually has a moist interior."
+    },
+    {
+        "name" : "Pita",
+        "src" : "/assets/img/pita.jpg",
+        "price" : 100,
+        "description" : "Round with inner pocket, as it cooks, steam puffs up dough, as it cools and flattens a pocket is left in the middle."
+    },
+    {
+        "name" : "Rye bread",
+        "src" : "/assets/img/ryebread.jpg",
+        "price" : 100,
+        "description" : "Made of various fractions of rye grain flour, color light to dark via flour used and if colors added, usually denser and higher fiber than many common breads, darker color, stronger flavor."
+    }
+]

@@ -1,0 +1,11 @@
+
+.navbar{
+    height: 40px;
+    border-bottom: 2px blue solid;
+    text-align: center;
+    padding: 10px;
+}
+
+.navheader{
+    padding: 20px;
+}
