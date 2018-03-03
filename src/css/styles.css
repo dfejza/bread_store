@@ -1,0 +1,38 @@
+html, 
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue !important;
+}
+
+.products-list{
+    display:flex;  
+    list-style:none;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.product{
+    margin: 15px;
+    padding-bottom: 25px;
+}
+
+.checkout{
+    position: absolute;
+    right:    10;
+    bottom:   10;
+}
+
+#bread-checkout-form{
+    height: 40px;
+}
+
+.modalPrice{
+    position: absolute;
+    left:    40px;
+    bottom:   20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+

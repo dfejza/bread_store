@@ -1,0 +1,80 @@
+[
+    {
+        "name" : "Black Bread",
+        "src" : "./assets/img/blackbread.jpg",
+        "price" : 10000,
+        "description" : "Made of rye grain, usually dark colored and high fiber, ranges from crispy in texture to dense and chewy."
+    },
+    {
+        "name" : "Bolani",
+        "src" : "/assets/img/bolani.jpg",
+        "price" : 20000,
+        "description" : "Has a very thin crust and can be stuffed with a variety of ingredients, such as potatoes, spinach, lentils, pumpkin, or leeks."
+    },
+    {
+        "name" : "Cornbread",
+        "src" : "/assets/img/cornbread.jpg",
+        "price" : 100,
+        "description" : "Made from cornmeal, can be baked or fried, has a golden appearance, usually has a moist interior."
+    },
+    {
+        "name" : "Pita",
+        "src" : "/assets/img/pita.jpg",
+        "price" : 100,
+        "description" : "Round with inner pocket, as it cooks, steam puffs up dough, as it cools and flattens a pocket is left in the middle."
+    },
+    {
+        "name" : "Rye bread",
+        "src" : "/assets/img/ryebread.jpg",
+        "price" : 100,
+        "description" : "Made of various fractions of rye grain flour, color light to dark via flour used and if colors added, usually denser and higher fiber than many common breads, darker color, stronger flavor."
+    },
+    {
+        "name" : "Rice bread",
+        "src" : "/assets/img/ricebread.jpg",
+        "price" : 100,
+        "description" : "Made from rice flour."
+    },
+    {
+        "name" : "Naan",
+        "src" : "/assets/img/naan.jpg",
+        "price" : 100,
+        "description" : "A leavened and oven-baked Flatbread, typical and popular in South, Central, and West Asia. Noted for its cooking in a tandoor."
+    },
+    {
+        "name" : "Kulcha",
+        "src" : "/assets/img/kulcha.jpg",
+        "price" : 100,
+        "description" : "Made of maida flour dough, mashed potatoes, onion (optional), lots of spices, rolled into flat round shape, baked until golden brown, usually rubbed with butter, eaten with spicy chickpea curry."
+    },
+    {
+        "name" : "Kalach",
+        "src" : "/assets/img/kalach.jpg",
+        "price" : 100,
+        "description" : "Kettlebell-shaped or ring-shaped bread."
+    },
+    {
+        "name" : "Farl",
+        "src" : "/assets/img/farl.jpg",
+        "price" : 100,
+        "description" : "Made by spreading dough on a griddle or skillet in a rough circular shape, then cutting it into four equal pieces and cooking."
+    },
+    {
+        "name" : "Cracker",
+        "src" : "/assets/img/cracker.jpg",
+        "price" : 100,
+        "description" : "A baked good typically made from a grain and flour, dough and usually manufactured in large quantities. Crackers (roughly equivalent to savory biscuits in the United Kingdom and the Isle of Man) are usually flat, crisp, small in size (usually 3 inches or less in diameter) and made in various shapes, commonly round or square."
+    },
+    {
+        "name" : "Brown Bread",
+        "src" : "/assets/img/brownbread.jpg",
+        "price" : 100,
+        "description" : "Made with a significant amount of whole grain flour, usually rye or wheat; sometimes made with molasses or coffee. "
+    },
+    {
+        "name" : "Bazin",
+        "src" : "/assets/img/bazin.jpg",
+        "price" : 100,
+        "description" : "Prepared with barley, water and salt."
+    }
+]
