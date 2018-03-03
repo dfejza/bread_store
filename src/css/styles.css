@@ -28,11 +28,14 @@ body {
     height: 40px;
 }
 
-.modalPrice{
+.checkOutButton{
     position: absolute;
     left:    40px;
-    bottom:   20px;
+    bottom:   25px;
     font-weight: bold;
     font-size: 18px;
 }
 
+#newDialogue{
+    z-index: 10000;
+}

@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Bread API -->
-	<script src="https://checkout-sandbox.getbread.com/bread.js" data-api-key="4dbfe30f-0841-45bf-b281-7de2f2c62a49"></script>
+	<script src="https://checkout-sandbox.getbread.com/bread.js" data-api-key="7101ea30-8ae3-47ab-a8bd-235860d36f3e"></script>
 	<!-- Boostrap Navbar. Not much functional use, just for aesthetics -->
 		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 			<a class="navbar-brand" href="#">Bread Store</a>
@@ -28,10 +28,6 @@
 						<a class="nav-link" href="#">Dummy</a>
 					</li>
 				</ul>
-				<form class="form-inline my-2 my-lg-0">
-				<input class="form-control mr-sm-2" type="search" placeholder="Search for product" aria-label="Search">
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-				</form>
 			</div>
 		</nav>
   </head>
@@ -40,7 +36,24 @@
   
   <body>
 	  <!-- Modal -->
-	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade" id="newDialogue" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="newDialogueTitle">Modal title</h5>
+			</div>
+			<div class="modal-body">
+				<p id="newDialogueText"></p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+			</div>
+		</div>
+	</div>
+
+	  <!-- Modal for specific item-->
+	<div class="modal fade" id="modalPurchase" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-lg" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -59,34 +72,28 @@
 										<form>
 											<div class="form-row">
 												<div class="form-group col-md-6">
-													<label for="validationServer01">First Name</label>
-													<input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" value="John" required>
+													<label for="firstNameInput">First Name</label>
+													<input type="text" class="form-control" id="firstNameInput" placeholder="John" value="" required>
 												</div>
 												<div class="form-group col-md-6">
-													<label for="validationServer02">Last name</label>
-													<input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name" value="Doe" required>
+													<label for="lastNameInput">Last name</label>
+													<input type="text" class="form-control " id="lastNameInput" placeholder="Doe" value="" required>
 												</div>
 											</div>
 											<div class="form-group">
 												<label for="inputAddress">Address</label>
-												<input type="text" class="form-control is-invalid" id="inputAddress" placeholder="1234 Main St" required>
-												<div class="invalid-feedback">
-													Please provide a address.
-												</div>
+												<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
 											</div>
 											<div class="form-row">
 												<div class="form-group col-md-6">
 													<label for="inputCity">City</label>
-													<input type="text" class="form-control is-invalid" id="inputCity" required>
-													<div class="invalid-feedback">
-														Please provide a valid city.
-													</div>
+													<input type="text" class="form-control" id="inputCity" required>
 												</div>
 												<div class="form-group col-md-4">
 												<label for="inputState">State</label>
 												<select id="inputState" class="form-control">
-													<option selected>NY</option>
-													<option>Outside of NY</option>
+													<option value="NY" selected>NY</option>
+													<option value="NOTNY">Outside of NY</option>
 												</select>
 												</div>
 												<div class="form-group col-md-2">
@@ -113,16 +120,14 @@
 													</label>
 												</div>
 											</div>
-											<button class="btn btn-primary calcShippingTax">Calculate Tax & Shipping</button>
+											<button class="btn btn-primary calcShippingTax">Update Tax & Shipping</button>
 										</form>
 								</div>
 							</div>
 						</div>
 				</div>
 				<div class="modal-footer">
-					<p class="modalPrice">Total Price: </p>
-					<!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Save changes</button> -->
+					<button type="button" class="btn btn-primary checkOutButton" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Not implement!">Total Price: </button>					
 					<form id="bread-checkout-form" action="/confirm" method="POST">
 						<div id="bread-checkout-btn" data-bread-default-size="true"></div>
 					</form>
@@ -140,7 +145,7 @@
 					<div class="card-body">
 						<h5 class="card-title">{{name}}</h5>
 						<p class="card-text">{{description}}</p>
-						<button type="button" class="btn btn-primary checkout" data-toggle="modal" data-target="#exampleModal" data-index="{{@index}}">
+						<button type="button" class="btn btn-primary checkout" data-toggle="modal" data-target="#modalPurchase" data-index="{{@index}}">
 								View more details
 						</button>
 					</div>
